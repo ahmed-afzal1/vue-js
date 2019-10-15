@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue js Events Object</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .canvas{
+            height: 240px;
+            width: 240px;
+            margin-top: 20px;
+            background: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+       <button @click ="me">Click me</button>
+       <div class="canvas" @mousemove="over">{{log.x}},{{log.y}}</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

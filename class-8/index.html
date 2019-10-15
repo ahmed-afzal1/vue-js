@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modifiers</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+</head>
+<body>
+    <div id="app">
+       <h2>My name is {{name}}</h2>
+       <button v-on:click="Message">Click me</button>
+       <a v-bind:href="website" v-on:click.prevent>{{website}}</a>
+       <br><br>
+       <button v-on:click.shift="Message">click with shift key</button>
+
+       <br><br>
+
+       <form>
+        <label for="firstNumber">firstNumber</label>
+        <input type="text" id="firstNumber" v-model="firstNumber">
+        <br/>
+        <label for="secondNumber">secondNumber</label>
+        <input type="text" id="secondNumber" v-model="secondNumber">
+        <br/>
+        <label for="result">result</label>
+        <input type="text" id="result" v-model="result">
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

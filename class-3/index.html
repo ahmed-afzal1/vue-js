@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>One way Data Binding</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <style>
+    
+        .one{
+            color: brown;
+        }
+        .two{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>{{name}}</h1>
+        <a v-bind:href="website">facebook</a>
+        <p v-bind:class="classes">Genius Ocan team</p>
+        <input type="text" :value="value">
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
